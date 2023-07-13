@@ -1,0 +1,183 @@
+html{
+    box-sizing:border-box;/* 元素的寬度和高度將包括您添加的任何邊框或填充，並且內容框將縮小以吸收額外的寬度。 */
+  }
+
+*{/*代表全部標籤*/
+    box-sizing: inherit;/* 繼承至父層的 broder-sizing 設定値 */
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFFFFF;
+    width: auto;
+}
+a{
+    text-decoration:none;
+}
+/* 上面是一些方便排版的設定，除了背景顏色其他盡量不要改 */
+
+/* 我習慣把設定文字的 class 集中一區 */
+
+.text_title{
+    color: #524778;
+    font-size: 35px;
+    font-family: 'Roboto',Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5em;
+    text-indent: 0.5em;
+    margin-bottom: 30px;
+
+}
+
+
+/* banner 區 */
+.banner_container img{
+    width: 100%;    /* 調整圖片大小，雖然圖片有刻意做剛好了，在有些螢幕可能還是會不剛好 */
+    height: auto;
+ }
+ 
+
+
+/* main 區 */
+
+.container{     /*  每個大區塊都共用這個 class */
+    width: 100%;
+    min-height: 90vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 150px;
+      /* 為了讓區塊顯示出來的設定，之後可以刪掉 */
+}
+
+    /* about 區 */
+    .about_content{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .about_left{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 80px;
+    }
+    .about_content img{
+        width: 300px;
+        height: auto;
+    }
+    .text_name{
+        color:#524778;
+        font-size: 30px;
+        font-family: 'Roboto',Arial, sans-serif;
+        font-weight: 600;
+        text-indent: 0.1em;
+        letter-spacing: 0.1em;
+        padding: 5px 0;
+    }
+    .about_right{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: start;
+        margin: 0 80px;
+    }
+    .about_right h3{
+        color:#a596d6;
+        font-size: 22px;
+        font-family: 'Noto Serif JP',serif;
+        font-weight: 600;
+        line-height: 35px;
+        letter-spacing: 0.1em;
+        padding: 10px 0;
+    }
+    .about_text{
+        color: black;
+        font-size: 15px;
+        font-family: 'Roboto',Arial, sans-serif;
+        font-weight: 600;
+        line-height: 25px;
+        letter-spacing: 0.1em;
+    }
+    
+    /* unity區 */
+
+.unity_container{
+    background-color: #7d77aa;
+    
+}.unity_content{
+    display: flex;
+    flex-direction: column;
+}
+.unity_content_item{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.unity_content_item img{
+    width: 400px;
+    height:auto;
+    margin: 0 15px 30px 15px;
+    transition:.2s linear;/* 轉場的持續時間、linear：表示設定轉場過程從開始到結束的速度一致 */
+}
+.unity_content_item img:hover{
+    transform: scale(1.2);/* 長、寬都變1.2倍 */
+}
+.button{
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#7d77aa;
+    border: 2px black solid;
+    color: black;
+    font-size: 15px;
+    font-family: 'Roboto',Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-indent: 0.1em;
+}
+.button:hover{
+    background-color: black;
+    color: #FFFFFF;
+}
+
+
+
+/* footer 區 */
+
+
+footer{
+        background-color: #624f82;
+        width: 100%;
+        padding:35px 130px;
+        display:flex;
+        justify-content: space-between;
+}
+.footer_sns_container{
+    margin-top: 10px;
+}
+.footer_sns{
+    margin-right:18px;
+}
+.footer_sns:hover{
+    opacity:.5;/* 元素的不透明度 */
+}
+.text_footer{
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: 'Noto Serif JP',serif;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.495em;
+    margin-bottom: 27px;
+}
+    
+
